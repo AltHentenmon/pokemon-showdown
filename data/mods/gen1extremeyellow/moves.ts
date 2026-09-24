@@ -4181,7 +4181,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	dragonrage: {
 		num: 82,
 		accuracy: 100,
-		basePower: 1exp,
+		basePower: 1,
 		damage: 40,
 		category: "Special",
 		isNonstandard: "Past",

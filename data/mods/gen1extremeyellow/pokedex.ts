@@ -861,7 +861,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	thufizer: {
 		types: ['Flying'],
-		name: "ThuFiZer"
+		name: "ThuFiZer",
 		heightm: 2.5,
 		weightkg: 168,
 		color: "Blue",
