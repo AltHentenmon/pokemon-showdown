@@ -26,13 +26,13 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		section: "Custom Formats"
 	},
 	{
-		name: "[Gen 1] Extreme Yellow OU"
+		name: "[Gen 1] Extreme Yellow OU",
 		mod: 'gen1extremeyellow',
 		ruleset: ['Standard'],
 		banlist: ['Uber', 'AG'],
 	},
 	{
-		name: "[Gen 1] Extreme Yellow AG"
+		name: "[Gen 1] Extreme Yellow AG",
 		mod: 'gen1extremeyellow',
 		ruleset: ['Standard AG'],
 	},
