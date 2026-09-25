@@ -73,7 +73,7 @@ export const Scripts: ModdedBattleScriptsData = {
 			}
 		}
 
-		if (isExtRed && megaCount > 1) {
+		if (isExtremeYellow && megaCount > 1) {
 			return [
 				'You may only use one Mega Pokémon per team in Extreme Yellow.',
 			];
@@ -100,8 +100,6 @@ export const Scripts: ModdedBattleScriptsData = {
 			// Make everything standard
 			species.isNonstandard = null;
 
-			// CRITICAL FIX:
-			// EVERYTHING belongs to Extinction Red
 			species.gen = 1;
 
 			// Default tier fallback
