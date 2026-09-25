@@ -959,13 +959,13 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	meltan: {
 		inherit: true,
 		isNonstandard: null,
-		baseStats: { hp: 46, atk: 65, def: 65, spa: 55, spd: 55, spe: 34 }
+		baseStats: { hp: 46, atk: 65, def: 65, spa: 55, spd: 55, spe: 34 },
 		gen: 1,
 	},
 	melmetal: {
 		inherit: true,
 		isNonstandard: null,
-		baseStats: { hp: 135, atk: 143, def: 143, spa: 80, spd: 80, spe: 34 }
+		baseStats: { hp: 135, atk: 143, def: 143, spa: 80, spd: 80, spe: 34 },
 		gen: 1,
 	},
 	venustoise: {
@@ -976,7 +976,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		gen: 1,
 		weightkg: 136.1,
 		color: "Blue",
-		baseStats: { hp: 105, atk: 109, def: 131, spa: 131, spd: 131, spe: 104 }
+		baseStats: { hp: 105, atk: 109, def: 131, spa: 131, spd: 131, spe: 104 },
 	},
 	thufizer: {
 		types: ['Flying'],
@@ -986,36 +986,36 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		gen: 1,
 		weightkg: 168,
 		color: "Blue",
-		baseStats: { hp: 105, atk: 116, def: 116, spa: 145, spd: 145, spe: 116 } 
+		baseStats: { hp: 105, atk: 116, def: 116, spa: 145, spd: 145, spe: 116 }, 
 	},
 	zygardemega: {
 		inherit: true,
 		isNonstandard: null,
-		baseStats: { hp: 216, atk: 70, def: 91, spa: 216, spd: 216, spe: 100 }
+		baseStats: { hp: 216, atk: 70, def: 91, spa: 216, spd: 216, spe: 100 },
 		gen: 1,
 	},
 	necrozmaultra: {
 		inherit: true,
 		isNonstandard: null,
-		baseStats: { hp: 97, atk: 167, def: 97, spa: 167, spd: 167, spe: 129 }
+		baseStats: { hp: 97, atk: 167, def: 97, spa: 167, spd: 167, spe: 129 },
 		gen: 1,
 	},
 	rayquazamega: {
 		inherit: true,
 		isNonstandard: null,
-		baseStats: { hp: 105, atk: 180, def: 100, spa: 180, spd: 180, spe: 115 }
+		baseStats: { hp: 105, atk: 180, def: 100, spa: 180, spd: 180, spe: 115 },
 		gen: 1,
 	},
 	eternatuseternamax: {
 		inherit: true,
 		isNonstandard: null,
-		baseStats: { hp: 255, atk: 115, def: 250, spa: 250, spd: 250, spe: 130 }
+		baseStats: { hp: 255, atk: 115, def: 250, spa: 250, spd: 250, spe: 130 },
 		gen: 1,
 	},
 	arceus: {
 		inherit: true,
 		isNonstandard: null,
-		baseStats: { hp: 120, atk: 120, def: 120, spa: 120, spd: 120, spe: 120 }
+		baseStats: { hp: 120, atk: 120, def: 120, spa: 120, spd: 120, spe: 120 },
 		gen: 1,
 	},
 	bluesdad: {
@@ -1026,7 +1026,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		gen: 1,
 		weightkg: 65.0,
 		color: "Gray",
-		baseStats: { hp: 150, atk: 1, def: 150, spa: 255, spd: 255, spe: 255 }
+		baseStats: { hp: 150, atk: 1, def: 150, spa: 255, spd: 255, spe: 255 },
 	},
 	bluesmom: {
 		types: ['Normal'],
@@ -1036,7 +1036,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		gen: 1,
 		weightkg: 55.0,
 		color: "Gray",
-		baseStats: { hp: 150, atk: 1, def: 150, spa: 255, spd: 255, spe: 255 }
+		baseStats: { hp: 150, atk: 1, def: 150, spa: 255, spd: 255, spe: 255 },
 	},
 	dad: {
 		types: ['Normal'],
@@ -1046,6 +1046,6 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		gen: 1,
 		weightkg: 70.0,
 		color: "Gray",
-		baseStats: { hp: 150, atk: 1, def: 150, spa: 255, spd: 255, spe: 255 }
+		baseStats: { hp: 150, atk: 1, def: 150, spa: 255, spd: 255, spe: 255 },
 	},
 };
