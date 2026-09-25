@@ -181,6 +181,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "any",
 		type: "Flying",
 		contestType: "Cool",
+		gen: 1,
 	},
 /*
 	aeroblast: {
@@ -254,6 +255,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "allAdjacentFoes",
 		type: "Flying",
 		contestType: "Cool",
+		gen: 1,
 	},
 /*
 */
@@ -273,6 +275,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "any",
 		type: "Flying",
 		contestType: "Cool",
+		gen: 1,
 	},
 /*
 	alloutpummeling: {
@@ -477,6 +480,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Water",
 		contestType: "Cool",
+		gen: 1,
 	},
 /*
 	aquaring: {
@@ -1415,6 +1419,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Fire",
 		contestType: "Beautiful",
+		gen: 1,
 	},
 /*
 	blazekick: {
@@ -1574,6 +1579,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		overrideOffensiveStat: 'def',
 		target: "normal",
 		type: "Fighting",
+		gen: 1,
 	},
 /*
 	bodyslam: {
@@ -1783,6 +1789,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "any",
 		type: "Flying",
 		contestType: "Cool",
+		gen: 1,
 	},
 /*
 	breakingswipe: {
@@ -2002,6 +2009,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Steel",
 		contestType: "Tough",
+		gen: 1,
 	},
 /*
 */
@@ -2020,6 +2028,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		zMove: { basePower: 140 },
 		maxMove: { basePower: 130 },
 		contestType: "Cool",
+		gen: 1,
 	},
 /*
 	burningbulwark: {
@@ -2358,6 +2367,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Fairy",
 		zMove: { boost: { def: 1 } },
 		contestType: "Cute",
+		gen: 1,
 	},
 /*
 	chatter: {
@@ -2596,6 +2606,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Fighting",
 		contestType: "Tough",
+		gen: 1,
 	},
 /*
 	coaching: {
@@ -3265,6 +3276,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Dark",
 		contestType: "Tough",
+		gen: 1,
 	},
 /*
 	crushclaw: {
@@ -3352,6 +3364,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Ghost",
 		zMove: { effect: 'curse' },
 		contestType: "Tough",
+		gen: 1,
 	},
 /*
 	cut: {
@@ -3401,6 +3414,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "any",
 		type: "Dark",
 		contestType: "Cool",
+		gen: 1,
 	},
 /*
 	darkvoid: {
@@ -3792,6 +3806,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Water",
 		contestType: "Beautiful",
+		gen: 1,
 	},
 /*
 	dizzypunch: {
@@ -3917,6 +3932,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		zMove: { basePower: 180 },
 		maxMove: { basePower: 140 },
 		contestType: "Clever",
+		gen: 1,
 	},
 /*
 	doublekick: {
@@ -4026,12 +4042,14 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		self: {
 			boosts: {
 				def: -1,
+				spa: -1,
 				spd: -1,
 			},
 		},
 		target: "any",
 		type: "Flying",
 		contestType: "Beautiful",
+		gen: 1,
 	},
 /*
 */
@@ -4051,6 +4069,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Dragon",
 		contestType: "Cool",
+		gen: 1,
 	},
 /*
 	dragoncheer: {
@@ -4097,6 +4116,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Dragon",
 		contestType: "Cool",
+		gen: 1,
 	},
 /*
 */
@@ -4117,6 +4137,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Dragon",
 		zMove: { effect: 'clearnegativeboost' },
 		contestType: "Cool",
+		gen: 1,
 	},
 /*
 	dragondarts: {
@@ -4239,6 +4260,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Fairy",
 		contestType: "Cute",
+		gen: 1,
 	},
 /*
 */
@@ -4255,6 +4277,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Fighting",
 		contestType: "Tough",
+		gen: 1,
 	},
 /*
 	dreameater: {
@@ -4302,6 +4325,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Ground",
 		contestType: "Tough",
+		gen: 1,
 	},
 /*
 	drumbeating: {
@@ -4568,6 +4592,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Electric",
 		zMove: { boost: { spe: 1 } },
 		contestType: "Clever",
+		gen: 1,
 	},
 /*
 	electrify: {
@@ -4875,6 +4900,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Grass",
 		contestType: "Beautiful",
+		gen: 1,
 	},
 /*
 	entrainment: {
@@ -4961,6 +4987,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		},
 		target: "normal",
 		type: "Dragon",
+		gen: 1,
 	},
 /*
 	expandingforce: {
@@ -5045,6 +5072,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Normal",
 		contestType: "Cool",
+		gen: 1,
 	},
 /*
 	facade: {
@@ -5217,6 +5245,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Dark",
 		contestType: "Clever",
+		gen: 1,
 	},
 /*
 	fellstinger: {
@@ -5577,6 +5606,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		zMove: { basePower: 160 },
 		maxMove: { basePower: 130 },
 		contestType: "Cute",
+		gen: 1,
 	},
 /*
 	flameburst: {
@@ -5678,6 +5708,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Fire",
 		contestType: "Cool",
+		gen: 1,
 	},
 /*
 	flash: {
@@ -5718,6 +5749,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Steel",
 		contestType: "Beautiful",
+		gen: 1,
 	},
 /*
 	flatter: {
@@ -6157,6 +6189,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Ice",
 		contestType: "Beautiful",
+		gen: 1,
 	},
 /*
 	freezeshock: {
@@ -6239,6 +6272,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Grass",
 		contestType: "Cool",
+		gen: 1,
 	},
 /*
 	frostbreath: {
@@ -6560,6 +6594,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Grass",
 		contestType: "Clever",
+		gen: 1,
 	},
 /*
 	gigaimpact: {
@@ -7711,6 +7746,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Grass",
 		zMove: { boost: { def: 1 } },
 		contestType: "Beautiful",
+		gen: 1,
 	},
 /*
 	gravapple: {
@@ -8004,6 +8040,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Poison",
 		contestType: "Tough",
+		gen: 1,
 	},
 /*
 	gust: {
@@ -8042,6 +8079,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		zMove: { basePower: 160 },
 		maxMove: { basePower: 130 },
 		contestType: "Cool",
+		gen: 1,
 	},
 /*
 */
@@ -8060,6 +8098,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Ice",
 		zMove: { boost: { spe: 1 } },
 		contestType: "Beautiful",
+		gen: 1,
 	},
 /*
 	hammerarm: {
@@ -8254,6 +8293,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Rock",
 		contestType: "Tough",
+		gen: 1,
 	},
 /*
 	healbell: {
@@ -8549,6 +8589,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "allAdjacentFoes",
 		type: "Fire",
 		contestType: "Beautiful",
+		gen: 1,
 	},
 /*
 	heavyslam: {
@@ -9067,6 +9108,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "any",
 		type: "Flying",
 		contestType: "Tough",
+		gen: 1,
 	},
 /*
 */
@@ -9085,6 +9127,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Water",
 		contestType: "Beautiful",
+		gen: 1,
 	},
 /*
 	hydropump: {
@@ -9481,6 +9524,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Ice",
 		contestType: "Beautiful",
+		gen: 1,
 	},
 /*
 */
@@ -9499,6 +9543,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		zMove: { basePower: 140 },
 		maxMove: { basePower: 130 },
 		contestType: "Beautiful",
+		gen: 1,
 	},
 /*
 	icywind: {
@@ -9629,6 +9674,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 */
 	infestation: {
 		inherit: true,
+		gen: 1,
 		ignoreImmunity: true,
 		self: {
 			volatileStatus: 'partialtrappinglock',
@@ -9790,6 +9836,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Steel",
 		contestType: "Cool",
+		gen: 1,
 	},
 /*
 	ivycudgel: {
@@ -9872,6 +9919,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Normal",
 		contestType: "Beautiful",
+		gen: 1,
 	},
 /*
 	jumpkick: {
@@ -10208,6 +10256,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Grass",
 		contestType: "Beautiful",
+		gen: 1,
 	},
 /*
 	leaftornado: {
@@ -10677,6 +10726,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Fighting",
 		contestType: "Cool",
+		gen: 1,
 	},
 /*
 */
@@ -10692,6 +10742,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Grass",
 		contestType: "Beautiful",
+		gen: 1,
 	},
 /*
 	magicaltorque: {
@@ -11618,6 +11669,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Bug",
 		contestType: "Cool",
+		gen: 1,
 	},
 /*
 	megakick: {
@@ -11734,6 +11786,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Steel",
 		contestType: "Cool",
+		gen: 1,
 	},
 /*
 	metalsound: {
@@ -11814,6 +11867,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Steel",
 		contestType: "Cool",
+		gen: 1,
 	},
 /*
 	metronome: {
@@ -12015,6 +12069,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "scripted",
 		type: "Psychic",
 		contestType: "Beautiful",
+		gen: 1,
 	},
 /*
 	mirrormove: {
@@ -12189,6 +12244,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Fairy",
 		zMove: { boost: { spd: 1 } },
 		contestType: "Beautiful",
+		gen: 1,
 	},
 /*
 */
@@ -12210,6 +12266,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Fairy",
 		contestType: "Beautiful",
+		gen: 1,
 	},
 /*
 	moongeistbeam: {
@@ -12420,6 +12477,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Ground",
 		contestType: "Tough",
+		gen: 1,
 	},
 /*
 */
@@ -12441,6 +12499,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Ground",
 		contestType: "Cute",
+		gen: 1,
 	},
 /*
 	mudsport: {
@@ -12734,6 +12793,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Dark",
 		contestType: "Cool",
+		gen: 1,
 	},
 /*
 	nihillight: {
@@ -13081,6 +13141,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "randomNormal",
 		type: "Dragon",
 		contestType: "Cool",
+		gen: 1,
 	},
 /*
 	overdrive: {
@@ -13265,6 +13326,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Normal",
 		zMove: { effect: 'clearnegativeboost' },
 		contestType: "Beautiful",
+		gen: 1,
 	},
 /*
 	petalblizzard: {
@@ -13334,6 +13396,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Psychic",
 		contestType: "Cool",
+		gen: 1,
 	},
 /*
 	pikapapow: {
@@ -13424,6 +13487,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Fairy",
 		contestType: "Cute",
+		gen: 1,
 	},
 /*
 	pluck: {
@@ -14133,6 +14197,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Psychic",
 		zMove: { boost: { spa: 1 } },
 		contestType: "Clever",
+		gen: 1,
 	},
 /*
 	psychoboost: {
@@ -14167,6 +14232,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Psychic",
 		contestType: "Cool",
+		gen: 1,
 	},
 /*
 	psychoshift: {
@@ -14274,6 +14340,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Psychic",
 		contestType: "Cool",
+		gen: 1,
 	},
 /*
 	psywave: {
@@ -14535,6 +14602,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Bug",
 		zMove: { effect: 'clearnegativeboost' },
 		contestType: "Beautiful",
+		gen: 1,
 	},
 /*
 	rage: {
@@ -14680,6 +14748,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Water",
 		zMove: { boost: { spe: 1 } },
 		contestType: "Beautiful",
+		gen: 1,
 	},
 /*
 */
@@ -14735,6 +14804,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Normal",
 		contestType: "Cool",
+		gen: 1,
 	},
 /*
 	razorleaf: {
@@ -15166,6 +15236,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Normal",
 		contestType: "Tough",
+		gen: 1,
 	},
 /*
 	rockpolish: {
@@ -15210,6 +15281,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Fighting",
 		contestType: "Tough",
+		gen: 1,
 	},
 /*
 	rockthrow: {
@@ -15236,6 +15308,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Rock",
 		contestType: "Clever",
+		gen: 1,
 	},
 /*
 	rockwrecker: {
@@ -15372,31 +15445,11 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: { snatch: 1, heal: 1, metronome: 1 },
 		heal: [1, 2],
-		self: {
-			volatileStatus: 'roost',
-		},
-		condition: {
-			duration: 1,
-			onResidualOrder: 25,
-			onStart(target) {
-				if (target.terastallized) {
-					if (target.hasType('Flying')) {
-						this.add('-hint', "If a Terastallized Pokemon uses Roost, it remains Flying-type.");
-					}
-					return false;
-				}
-				this.add('-singleturn', target, 'move: Roost');
-			},
-			onTypePriority: -1,
-			onType(types, pokemon) {
-				this.effectState.typeWas = types;
-				return types.filter(type => type !== 'Flying');
-			},
-		},
 		target: "self",
 		type: "Flying",
 		zMove: { effect: 'clearnegativeboost' },
 		contestType: "Clever",
+		gen: 1,
 	},
 /*
 	rototiller: {
@@ -15639,6 +15692,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Rock",
 		zMove: { boost: { spe: 1 } },
 		contestType: "Tough",
+		gen: 1,
 	},
 /*
 	sandtomb: {
@@ -15706,6 +15760,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Water",
 		contestType: "Tough",
+		gen: 1,
 	},
 /*
 	scaleshot: {
@@ -15953,6 +16008,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Ghost",
 		contestType: "Clever",
+		gen: 1,
 	},
 /*
 	shadowbone: {
@@ -15989,6 +16045,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Ghost",
 		contestType: "Cool",
+		gen: 1,
 	},
 /*
 	shadowforce: {
@@ -16033,6 +16090,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Ghost",
 		contestType: "Clever",
+		gen: 1,
 	},
 /*
 */
@@ -16048,6 +16106,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Ghost",
 		contestType: "Clever",
+		gen: 1,
 	},
 /*
 	sharpen: {
@@ -16284,6 +16343,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Electric",
 		contestType: "Cool",
+		gen: 1,
 	},
 /*
 	shoreup: {
@@ -16867,6 +16927,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "allAdjacent",
 		type: "Poison",
 		contestType: "Tough",
+		gen: 1,
 	},
 /*
 	smackdown: {
@@ -17425,6 +17486,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Ground",
 		zMove: { boost: { def: 1 } },
 		contestType: "Clever",
+		gen: 1,
 	},
 /*
 	spikyshield: {
@@ -17739,6 +17801,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Rock",
 		zMove: { boost: { def: 1 } },
 		contestType: "Cool",
+		gen: 1,
 	},
 /*
 	steameruption: {
@@ -17836,6 +17899,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Steel",
 		contestType: "Cool",
+		gen: 1,
 	},
 /*
 */
@@ -17863,6 +17927,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Bug",
 		zMove: { boost: { spe: 1 } },
 		contestType: "Tough",
+		gen: 1,
 	},
 /*
 	stockpile: {
@@ -18017,6 +18082,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Rock",
 		contestType: "Tough",
+		gen: 1,
 	},
 /*
 	storedpower: {
@@ -18364,6 +18430,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Fire",
 		zMove: { boost: { spe: 1 } },
 		contestType: "Beautiful",
+		gen: 1,
 	},
 /*
 	sunsteelstrike: {
@@ -18422,6 +18489,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Fighting",
 		contestType: "Tough",
+		gen: 1,
 	},
 /*
 	supersonic: {
@@ -18696,6 +18764,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Grass",
 		zMove: { effect: 'clearnegativeboost' },
 		contestType: "Clever",
+		gen: 1,
 	},
 /*
 	syrupbomb: {
@@ -19246,6 +19315,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Normal",
 		zMove: { basePower: 160 },
 		maxMove: { basePower: 130 },
+		gen: 1,
 	},
 /*
 	thief: {
@@ -19302,6 +19372,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Ground",
 		zMove: { basePower: 180 },
 		contestType: "Beautiful",
+		gen: 1,
 	},
 /*
 	thousandwaves: {
@@ -19713,6 +19784,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Poison",
 		zMove: { boost: { def: 1 } },
 		contestType: "Clever",
+		gen: 1,
 	},
 /*
 	toxicthread: {
@@ -19892,6 +19964,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Psychic",
 		zMove: { boost: { accuracy: 1 } },
 		contestType: "Clever",
+		gen: 1,
 	},
 /*
 	triplearrows: {
@@ -20102,6 +20175,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "allAdjacentFoes",
 		type: "Dragon",
 		contestType: "Cool",
+		gen: 1,
 	},
 /*
 	upperhand: {
@@ -20384,6 +20458,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Electric",
 		contestType: "Cool",
+		gen: 1,
 	},
 /*
 	wakeupslap: {
@@ -20530,6 +20605,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "any",
 		type: "Water",
 		contestType: "Beautiful",
+		gen: 1,
 	},
 /*
 	watershuriken: {
@@ -20672,6 +20748,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		zMove: { basePower: 160 },
 		maxMove: { basePower: 130 },
 		contestType: "Beautiful",
+		gen: 1,
 	},
 /*
 */
@@ -20688,6 +20765,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Water",
 		contestType: "Beautiful",
+		gen: 1,
 	},
 /*
 	whirlwind: {
@@ -20825,6 +20903,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Fire",
 		zMove: { boost: { atk: 1 } },
 		contestType: "Beautiful",
+		gen: 1,
 	},
 /*
 	wingattack: {
@@ -21050,6 +21129,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Bug",
 		contestType: "Cool",
+		gen: 1,
 	},
 /*
 	yawn: {
@@ -21101,6 +21181,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Electric",
 		contestType: "Cool",
+		gen: 1,
 	},
 /*
 */
@@ -21120,6 +21201,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Psychic",
 		contestType: "Clever",
+		gen: 1,
 	},
 /*
 	zingzap: {
