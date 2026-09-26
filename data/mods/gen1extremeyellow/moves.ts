@@ -20748,19 +20748,17 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 /*
 */
 	whirlpool: {
-		num: 250,
-		accuracy: 85,
-		basePower: 35,
-		category: "Special",
-		name: "Whirlpool",
-		pp: 15,
-		priority: 0,
-		flags: { protect: 1, mirror: 1, metronome: 1 },
-		volatileStatus: 'partiallytrapped',
-		target: "normal",
-		type: "Water",
-		contestType: "Beautiful",
-		gen: 1,
+		inherit: true,
+		ignoreImmunity: true,
+		self: {
+			volatileStatus: 'partialtrappinglock',
+		},
+		onTryMove(source, target) {
+			if (target.volatiles['mustrecharge']) {
+				target.removeVolatile('mustrecharge');
+				this.hint("In Gen 1, partial trapping moves negate the recharge turn of Hyper Beam, even if they miss.", true);
+			}
+		},
 	},
 /*
 	whirlwind: {
