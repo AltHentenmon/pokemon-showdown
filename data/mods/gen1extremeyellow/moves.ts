@@ -17485,7 +17485,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Ground",
 		zMove: { boost: { def: 1 } },
 		contestType: "Clever",
-		gen: 1,
 	},
 /*
 	spikyshield: {
@@ -17800,7 +17799,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Rock",
 		zMove: { boost: { def: 1 } },
 		contestType: "Cool",
-		gen: 1,
 	},
 /*
 	steameruption: {
@@ -17926,7 +17924,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Bug",
 		zMove: { boost: { spe: 1 } },
 		contestType: "Tough",
-		gen: 1,
 	},
 /*
 	stockpile: {
@@ -19783,7 +19780,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Poison",
 		zMove: { boost: { def: 1 } },
 		contestType: "Clever",
-		gen: 1,
 	},
 /*
 	toxicthread: {
