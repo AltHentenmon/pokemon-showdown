@@ -97,6 +97,7 @@ export const Scripts: ModdedBattleScriptsData = {
 	// INIT PATCHES
 	// ============================
 	init() {
+
 		// ============================
 		// POKÉDEX FIXES
 		// ============================
@@ -154,6 +155,16 @@ export const Scripts: ModdedBattleScriptsData = {
 
 			// Make all modern moves legal in ER
 			move.gen = 1;
+		}
+
+		for (const id in this.data.Moves) {
+		if (!this.data.Moves[id]) continue;
+
+		const move = this.data.Moves[id];
+
+		if (move.category === 'Status') continue;
+
+		this.modData('Moves', id).category = move.category;
 		}
 
 		// ============================
