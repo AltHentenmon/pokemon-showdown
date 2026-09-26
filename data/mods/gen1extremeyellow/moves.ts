@@ -14763,6 +14763,11 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
 		onAfterHit(target, pokemon, move) {
 			if (!move.hasSheerForce) {
+				this.add(
+					'-message',
+					`Side conditions: ${Object.keys(pokemon.side.sideConditions).join(', ')}`
+				);
+			
 				for (const condition of [
 					'spikes',
 					'toxicspikes',
@@ -14770,7 +14775,10 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 					'stickyweb',
 					'gmaxsteelsurge',
 				]) {
-					this.add('-message', `${condition}: ${!!pokemon.side.sideConditions[condition]}`);
+					this.add(
+						'-message',
+						`${condition}: ${!!pokemon.side.sideConditions[condition]}`
+					);
 				
 					if (pokemon.side.removeSideCondition(condition)) {
 						this.add(
