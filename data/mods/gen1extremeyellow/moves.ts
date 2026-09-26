@@ -14763,32 +14763,17 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
 		onAfterHit(target, pokemon, move) {
 			if (!move.hasSheerForce) {
-				this.add(
-					'-message',
-					`Side conditions: ${Object.keys(pokemon.side.sideConditions).join(', ')}`
-				);
-			
-				for (const condition of [
-					'spikes',
-					'toxicspikes',
-					'stealthrock',
-					'stickyweb',
-					'gmaxsteelsurge',
-				]) {
-					this.add(
-						'-message',
-						`${condition}: ${!!pokemon.side.sideConditions[condition]}`
-					);
-				
+				if (pokemon.removeVolatile('leechseed')) {
+					this.add('-end', pokemon, 'Leech Seed', '[from] move: Rapid Spin', `[of] ${pokemon}`);
+				}
+				const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
+				for (const condition of sideConditions) {
 					if (pokemon.side.removeSideCondition(condition)) {
-						this.add(
-							'-sideend',
-							pokemon.side,
-							this.dex.conditions.get(condition).name,
-							'[from] move: Rapid Spin',
-							`[of] ${pokemon}`,
-						);
+						this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] move: Rapid Spin', `[of] ${pokemon}`);
 					}
+				}
+				if (pokemon.volatiles['partiallytrapped']) {
+					pokemon.removeVolatile('partiallytrapped');
 				}
 			}
 		},
@@ -14819,7 +14804,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Normal",
 		contestType: "Cool",
-		gen: 1,
 	},
 /*
 	razorleaf: {
