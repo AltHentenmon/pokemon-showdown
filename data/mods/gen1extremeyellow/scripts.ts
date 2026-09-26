@@ -1,7 +1,13 @@
 export const Scripts: ModdedBattleScriptsData = {
 	inherit: 'gen1',
 	gen: 1,
+	
+	
+	getCategory(move) {
+			return move.category;
+	},
 
+	
 	// ============================
 	// TEAM VALIDATION
 	// ============================

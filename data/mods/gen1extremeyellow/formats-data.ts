@@ -756,7 +756,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		natDexTier: "UU",
 	},
 	blissey: {
-		tier: "Uber",
+		tier: "OU",
 		doublesTier: "(DUU)",
 		natDexTier: "UU",
 	},
@@ -804,7 +804,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		natDexTier: "RU",
 	},
 	starmiemega: {
-		tier: "Uber",
+		tier: "OU",
 	},
 	mimejr: {
 		tier: "LC",
