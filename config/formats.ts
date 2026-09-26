@@ -32,6 +32,12 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		banlist: ['Uber', 'AG'],
 	},
 	{
+		name: "[Gen 1] Extreme Yellow Ubers",
+		mod: 'gen1extremeyellow',
+		ruleset: ['Standard'],
+		banlist: ['AG'],
+	},
+	{
 		name: "[Gen 1] Extreme Yellow AG",
 		mod: 'gen1extremeyellow',
 		ruleset: ['Standard AG'],
