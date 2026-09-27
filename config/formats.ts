@@ -28,7 +28,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 	{
 		name: "[Gen 1] Extreme Yellow OU",
 		mod: 'gen1extremeyellow',
-		ruleset: ['Standard'],
+		ruleset: ['Standard', 'Mega Clause'],
 		banlist: ['Uber', 'AG'],
 	},
 	{

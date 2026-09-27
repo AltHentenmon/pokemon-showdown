@@ -14,6 +14,29 @@ export const Rulesets: import('../../../sim/dex-formats').ModdedFormatDataTable 
 		],
 		banlist: ['Dig', 'Fly'],
 	},
+	megaclause: {
+	effectType: 'Rule',
+	name: 'Mega Clause',
+	desc: 'You may only have one Mega Pokémon per team.',
+	onValidateTeam(team) {
+		let megaCount = 0;
+
+		for (const set of team) {
+			const species = this.dex.species.get(set.species);
+
+			const isMega = species.forme === 'Mega' || species.name.includes('-Mega');
+
+			if (isMega) {
+				megaCount++;
+				if (megaCount > 1) {
+					return [
+						'You may only have one Mega Pokémon per team.',
+					];
+				}
+			}
+		}
+	},
+},
 	'350cupmod': {
 		effectType: 'Rule',
 		name: '350 Cup Mod',

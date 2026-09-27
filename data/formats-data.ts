@@ -618,7 +618,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		natDexTier: "RUBL",
 	},
 	gengarmega: {
-		tier: "OU",
+		tier: "Uber",
 		natDexTier: "AG",
 	},
 	gengargmax: {
@@ -1069,7 +1069,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		natDexTier: "Uber",
 	},
 	mew: {
-		tier: "OU",
+		tier: "Uber",
 		doublesTier: "DUU",
 		natDexTier: "UU",
 	},
@@ -4456,7 +4456,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "Illegal",
 	},
 	eternatuseternamax: {
-		tier: "Uber",
+		tier: "AG",
 	},
 	kubfu: {
 		tier: "Illegal",
