@@ -13,11 +13,13 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	venusaur: {
 		inherit: true,
+		types: ['Grass', 'Ground'],
 		evos: ["venusaurmega"],
 		baseStats: { hp: 80, atk: 82, def: 83, spa: 100, spd: 100, spe: 80 },
 	},
     venusaurmega: {
 		baseSpecies: "Venusaur",
+		types: ['Grass', 'Ground'],
 		isNonstandard: null,
 		baseStats: { hp: 80, atk: 100, def: 123, spa: 122, spd: 122, spe: 80 },
 		gen: 1,
@@ -32,17 +34,20 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	charizard: {
 		inherit: true,
+		types: ['Fire', 'Dragon'],
 		evos: ["charizardmegax", "charizardmegay"],
 		baseStats: { hp: 78, atk: 84, def: 78, spa: 85, spd: 85, spe: 100 },
 	},
     charizardmegax: {
 		baseSpecies: "Charizard",
+		types: ['Fire', 'Dragon'],
 		isNonstandard: null,
 		baseStats: { hp: 78, atk: 130, def: 111, spa: 85, spd: 85, spe: 100 },
 		gen: 1,
 	},
     charizardmegay: {
 		baseSpecies: "Charizard",
+		types: ['Fire', 'Dragon'],
 		isNonstandard: null,
 		baseStats: { hp: 78, atk: 104, def: 78, spa: 159, spd: 159, spe: 100 },
 		gen: 1,
@@ -57,11 +62,13 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	blastoise: {
 		inherit: true,
+		types: ['Water', 'Steel'],
 		evos: ["blastoisemega"],
 		baseStats: { hp: 79, atk: 83, def: 100, spa: 85, spd: 85, spe: 78 },
 	},
     blastoisemega: {
 		baseSpecies: "Blastoise",
+		types: ['Water', 'Steel'],
 		isNonstandard: null,
 		baseStats: { hp: 79, atk: 103, def: 120, spa: 135, spd: 135, spe: 78 },
 		gen: 1,
@@ -76,6 +83,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	butterfree: {
 		inherit: true,
+		types: ['Bug', 'Psychic'],
 		baseStats: { hp: 60, atk: 45, def: 50, spa: 90, spd: 90, spe: 70 },
 	},
 	weedle: {
@@ -100,37 +108,45 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	pidgey: {
 		inherit: true,
+		types: ['Flying'],
 		baseStats: { hp: 40, atk: 45, def: 40, spa: 35, spd: 35, spe: 56 },
 	},
 	pidgeotto: {
 		inherit: true,
+		types: ['Flying'],
 		baseStats: { hp: 63, atk: 60, def: 55, spa: 50, spd: 50, spe: 71 },
 	},
 	pidgeot: {
 		inherit: true,
+		types: ['Flying'],
 		evos: ["pidgeotmega"],
 		baseStats: { hp: 83, atk: 80, def: 75, spa: 70, spd: 70, spe: 91 },
 	},
     pidgeotmega: {
 		baseSpecies: "Pidgeot",
+		types: ['Flying'],
 		isNonstandard: null,
 		baseStats: { hp: 83, atk: 80, def: 80, spa: 135, spd: 135, spe: 121 },
 		gen: 1,
 	},
 	rattata: {
 		inherit: true,
+		types: ['Normal', 'Ground'],
 		baseStats: { hp: 30, atk: 56, def: 35, spa: 25, spd: 25, spe: 72 },
 	},
 	raticate: {
 		inherit: true,
+		types: ['Normal', 'Ground'],
 		baseStats: { hp: 55, atk: 81, def: 60, spa: 50, spd: 50, spe: 97 },
 	},
 	spearow: {
 		inherit: true,
+		types: ['Flying', 'Fighting'],
 		baseStats: { hp: 40, atk: 60, def: 30, spa: 31, spd: 31, spe: 70 },
 	},
 	fearow: {
 		inherit: true,
+		types: ['Flying', 'Fighting'],
 		baseStats: { hp: 65, atk: 90, def: 65, spa: 61, spd: 61, spe: 100 },
 	},
 	ekans: {
@@ -139,31 +155,37 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	arbok: {
 		inherit: true,
+		types: ['Poison', 'Dark'],
 		baseStats: { hp: 60, atk: 85, def: 69, spa: 65, spd: 65, spe: 80 },
 	},
     pichu: {
 		inherit: true,
+		types: ['Electric', 'Ground'],
 		isNonstandard: null,
 		baseStats: { hp: 20, atk: 40, def: 15, spa: 35, spd: 35, spe: 60 },
 		gen: 1,
 	},
 	pikachu: {
 		inherit: true,
+		types: ['Electric', 'Ground'],
 		baseStats: { hp: 35, atk: 55, def: 30, spa: 50, spd: 50, spe: 90 },
 	},
 	raichu: {
 		inherit: true,
+		types: ['Electric', 'Ground'],
 		evos: ["raichumegax", "raichumegay"],
 		baseStats: { hp: 60, atk: 90, def: 55, spa: 90, spd: 90, spe: 100 },
 	},
     raichumegax: {
 		baseSpecies: "Raichu",
+		types: ['Electric', 'Flying'],
 		isNonstandard: null,
 		baseStats: { hp: 60, atk: 135, def: 95, spa: 95, spd: 95, spe: 110 },
 		gen: 1,
 	},
     raichumegay: {
 		baseSpecies: "Raichu",
+		types: ['Electric', 'Fairy'],
 		isNonstandard: null,
 		baseStats: { hp: 60, atk: 100, def: 55, spa: 160, spd: 160, spe: 130 },
 		gen: 1,
@@ -186,6 +208,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	nidoqueen: {
 		inherit: true,
+		types: ['Poison', 'Fairy'],
 		baseStats: { hp: 90, atk: 82, def: 87, spa: 75, spd: 75, spe: 76 },
 	},
 	nidoranm: {
@@ -198,6 +221,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	nidoking: {
 		inherit: true,
+		types: ['Poison', 'Fighting'],
 		baseStats: { hp: 81, atk: 92, def: 77, spa: 75, spd: 75, spe: 85 },
 	},
     cleffa: {
@@ -217,16 +241,19 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
     clefablemega: {
 		baseSpecies: "Clefable",
+		types: ['Fairy', 'Flying'],
 		isNonstandard: null,
 		baseStats: { hp: 95, atk: 80, def: 93, spa: 135, spd: 135, spe: 70 },
 		gen: 1,
 	},
 	vulpix: {
 		inherit: true,
+		types: ['Fire', 'Ghost'],
 		baseStats: { hp: 38, atk: 41, def: 40, spa: 65, spd: 65, spe: 65 },
 	},
 	ninetales: {
 		inherit: true,
+		types: ['Fire', 'Ghost'],
 		baseStats: { hp: 73, atk: 76, def: 75, spa: 100, spd: 100, spe: 100 },
 	},
     igglybuff: {
@@ -244,14 +271,17 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	zubat: {
 		inherit: true,
+		types: ['Dark', 'Flying'],
 		baseStats: { hp: 40, atk: 45, def: 35, spa: 40, spd: 40, spe: 55 },
 	},
 	golbat: {
 		inherit: true,
+		types: ['Dark', 'Flying'],
 		baseStats: { hp: 75, atk: 80, def: 70, spa: 75, spd: 75, spe: 90 },
 	},
     crobat: {
 		inherit: true,
+		types: ['Dark', 'Flying'],
 		baseStats: { hp: 85, atk: 90, def: 80, spa: 80, spd: 80, spe: 130 },
 		gen: 1,
 	},
@@ -269,15 +299,18 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
     bellossom: {
 		inherit: true,
+		types: ['Grass', 'Fire'],
 		baseStats: { hp: 75, atk: 80, def: 95, spa: 90, spd: 90, spe: 50 },
 		gen: 1,
 	},
 	paras: {
 		inherit: true,
+		types: ['Bug', 'Ghost'],
 		baseStats: { hp: 35, atk: 70, def: 55, spa: 55, spd: 55, spe: 25 },
 	},
 	parasect: {
 		inherit: true,
+		types: ['Bug', 'Ghost'],
 		baseStats: { hp: 60, atk: 95, def: 80, spa: 80, spd: 80, spe: 30 },
 	},
 	venonat: {
@@ -286,6 +319,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	venomoth: {
 		inherit: true,
+		types: ['Poison', 'Psychic'],
 		baseStats: { hp: 70, atk: 65, def: 60, spa: 90, spd: 90, spe: 90 },
 	},
 	diglett: {
@@ -306,10 +340,12 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	psyduck: {
 		inherit: true,
+		types: ['Water', 'Psychic'],
 		baseStats: { hp: 50, atk: 52, def: 48, spa: 50, spd: 50, spe: 55 },
 	},
 	golduck: {
 		inherit: true,
+		types: ['Water', 'Psychic'],
 		baseStats: { hp: 80, atk: 82, def: 78, spa: 80, spd: 80, spe: 85 },
 	},
 	mankey: {
@@ -318,6 +354,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	primeape: {
 		inherit: true,
+		types: ['Fighting', 'Dark'],
 		baseStats: { hp: 65, atk: 105, def: 60, spa: 60, spd: 60, spe: 95 },
 	},
     annihilape: {
@@ -332,6 +369,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	arcanine: {
 		inherit: true,
+		types: ['Fire', 'Dragon'],
 		baseStats: { hp: 90, atk: 110, def: 80, spa: 80, spd: 80, spe: 95 },
 	},
 	poliwag: {
@@ -399,6 +437,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
     victreebelmega: {
 		baseSpecies: "Victreebel",
+		types: ['Grass', 'Poison'],
 		isNonstandard: null,
 		baseStats: { hp: 80, atk: 125, def: 85, spa: 135, spd: 135, spe: 70 },
 		gen: 1,
@@ -413,22 +452,27 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	geodude: {
 		inherit: true,
+		types: ['Rock'],
 		baseStats: { hp: 40, atk: 80, def: 100, spa: 30, spd: 30, spe: 20 },
 	},
 	graveler: {
 		inherit: true,
+		types: ['Rock'],
 		baseStats: { hp: 55, atk: 95, def: 115, spa: 45, spd: 45, spe: 35 },
 	},
 	golem: {
 		inherit: true,
+		types: ['Rock'],
 		baseStats: { hp: 80, atk: 110, def: 130, spa: 55, spd: 55, spe: 45 },
 	},
 	ponyta: {
 		inherit: true,
+		types: ['Fire', 'Ground'],
 		baseStats: { hp: 50, atk: 85, def: 55, spa: 65, spd: 65, spe: 90 },
 	},
 	rapidash: {
 		inherit: true,
+		types: ['Fire', 'Ground'],
 		baseStats: { hp: 65, atk: 100, def: 70, spa: 80, spd: 80, spe: 105 },
 	},
 	slowpoke: {
@@ -473,10 +517,12 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	doduo: {
 		inherit: true,
+		types: ['Flying', 'Ground'],
 		baseStats: { hp: 35, atk: 85, def: 45, spa: 35, spd: 35, spe: 75 },
 	},
 	dodrio: {
 		inherit: true,
+		types: ['Flying', 'Ground'],
 		baseStats: { hp: 60, atk: 110, def: 70, spa: 60, spd: 60, spe: 110 },
 	},
 	seel: {
@@ -485,6 +531,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	dewgong: {
 		inherit: true,
+		types: ['Ice', 'Fairy'],
 		baseStats: { hp: 90, atk: 70, def: 80, spa: 95, spd: 95, spe: 70 },
 	},
 	grimer: {
@@ -493,31 +540,38 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	muk: {
 		inherit: true,
+		types: ['Poison', 'Ground'],
 		baseStats: { hp: 105, atk: 105, def: 75, spa: 65, spd: 65, spe: 50 },
 	},
 	shellder: {
 		inherit: true,
+		types: ['Water', 'Rock'],
 		baseStats: { hp: 30, atk: 65, def: 100, spa: 45, spd: 45, spe: 40 },
 	},
 	cloyster: {
 		inherit: true,
+		types: ['Ice', 'Rock'],
 		baseStats: { hp: 50, atk: 95, def: 180, spa: 85, spd: 85, spe: 70 },
 	},
 	gastly: {
 		inherit: true,
+		types: ['Ghost', 'Dark'],
 		baseStats: { hp: 30, atk: 35, def: 30, spa: 100, spd: 100, spe: 80 },
 	},
 	haunter: {
 		inherit: true,
+		types: ['Ghost', 'Dark'],
 		baseStats: { hp: 45, atk: 50, def: 45, spa: 115, spd: 115, spe: 95 },
 	},
 	gengar: {
 		inherit: true,
+		types: ['Ghost', 'Dark'],
 		evos: ["gengarmega"],
 		baseStats: { hp: 60, atk: 65, def: 60, spa: 130, spd: 130, spe: 110 },
 	},
     gengarmega: {
 		baseSpecies: "Gengar",
+		types: ['Ghost', 'Dark'],
 		isNonstandard: null,
 		baseStats: { hp: 60, atk: 65, def: 80, spa: 170, spd: 170, spe: 130 },
 		gen: 1,
@@ -535,32 +589,39 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
     steelixmega: {
 		baseSpecies: "Steelix",
+		types: ['Steel', 'Ground'],
 		isNonstandard: null,
 		baseStats: { hp: 75, atk: 125, def: 230, spa: 75, spd: 75, spe: 30 },
 		gen: 1,
 	},
 	drowzee: {
 		inherit: true,
+		types: ['Psychic', 'Dark'],
 		baseStats: { hp: 60, atk: 48, def: 45, spa: 90, spd: 90, spe: 42 },
 	},
 	hypno: {
 		inherit: true,
+		types: ['Psychic', 'Dark'],
 		baseStats: { hp: 85, atk: 73, def: 70, spa: 115, spd: 115, spe: 67 },
 	},
 	krabby: {
 		inherit: true,
+		types: ['Water', 'Bug'],
 		baseStats: { hp: 30, atk: 105, def: 90, spa: 25, spd: 25, spe: 50 },
 	},
 	kingler: {
 		inherit: true,
+		types: ['Water', 'Bug'],
 		baseStats: { hp: 55, atk: 130, def: 115, spa: 50, spd: 50, spe: 75 },
 	},
 	voltorb: {
 		inherit: true,
+		types: ['Electric', 'Fire'],
 		baseStats: { hp: 40, atk: 30, def: 50, spa: 55, spd: 55, spe: 100 },
 	},
 	electrode: {
 		inherit: true,
+		types: ['Electric', 'Fire'],
 		baseStats: { hp: 60, atk: 50, def: 70, spa: 80, spd: 80, spe: 140 },
 	},
 	exeggcute: {
@@ -573,10 +634,12 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	cubone: {
 		inherit: true,
+		types: ['Ground', 'Ghost'],
 		baseStats: { hp: 50, atk: 50, def: 95, spa: 40, spd: 40, spe: 35 },
 	},
 	marowak: {
 		inherit: true,
+		types: ['Ground', 'Ghost'],
 		baseStats: { hp: 60, atk: 80, def: 110, spa: 50, spd: 50, spe: 45 },
 	},
     tyrogue: {
@@ -587,14 +650,17 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
     },
 	hitmonlee: {
 		inherit: true,
+		types: ['Fighting', 'Ground'],
 		baseStats: { hp: 50, atk: 120, def: 53, spa: 35, spd: 35, spe: 87 },
 	},
 	hitmonchan: {
 		inherit: true,
+		types: ['Fighting', 'Normal'],
 		baseStats: { hp: 50, atk: 105, def: 79, spa: 35, spd: 35, spe: 76 },
 	},
     hitmontop: {
 		inherit: true,
+		types: ['Fighting', 'Flying'],
 		isNonstandard: null,
 		baseStats: { hp: 50, atk: 95, def: 95, spa: 35, spd: 35, spe: 70 },
 		gen: 1,
@@ -611,10 +677,12 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	koffing: {
 		inherit: true,
+		types: ['Poison', 'Fire'],
 		baseStats: { hp: 40, atk: 65, def: 95, spa: 60, spd: 60, spe: 35 },
 	},
 	weezing: {
 		inherit: true,
+		types: ['Poison', 'Fire'],
 		baseStats: { hp: 65, atk: 90, def: 120, spa: 85, spd: 85, spe: 60 },
 	},
 	rhyhorn: {
@@ -623,37 +691,44 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	rhydon: {
 		inherit: true,
+		types: ['Rock', 'Fighting'],
 		baseStats: { hp: 105, atk: 130, def: 120, spa: 45, spd: 45, spe: 40 },
 	},
     rhyperior: {
 		inherit: true,
 		isNonstandard: null,
+		types: ['Rock', 'Fighting'],
 		baseStats: { hp: 115, atk: 140, def: 130, spa: 55, spd: 55, spe: 40 },
 		gen: 1,
 	},
     happiny: {
 		inherit: true,
 		isNonstandard: null,
+		types: ['Fairy'],
 		baseStats: { hp: 100, atk: 5, def: 5, spa: 65, spd: 65, spe: 30 },
 		gen: 1,
 	},
 	chansey: {
 		inherit: true,
+		types: ['Fairy'],
 		baseStats: { hp: 250, atk: 5, def: 5, spa: 105, spd: 105, spe: 50 },
 	},
     blissey: {
 		inherit: true,
+		types: ['Fairy'],
 		isNonstandard: null,
 		baseStats: { hp: 255, atk: 10, def: 10, spa: 135, spd: 135, spe: 55 },
 		gen: 1,
 	},
 	tangela: {
 		inherit: true,
+		types: ['Grass', 'Dark'],
 		baseStats: { hp: 65, atk: 55, def: 115, spa: 100, spd: 100, spe: 60 },
 	},
     tangrowth: {
 		inherit: true,
 		isNonstandard: null,
+		types: ['Grass', 'Dark'],
 		baseStats: { hp: 100, atk: 100, def: 125, spa: 110, spd: 110, spe: 50 },
 		gen: 1,
 	},
@@ -664,6 +739,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	kangaskhanmega: {
 		baseSpecies: "Kangaskhan",
+		types: ['Normal'],
 		isNonstandard: null,
 		baseStats: { hp: 105, atk: 125, def: 100, spa: 80, spd: 80, spe: 100 },
 		gen: 1,
@@ -674,33 +750,40 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	seadra: {
 		inherit: true,
+		types: ['Water', 'Poison'],
 		baseStats: { hp: 55, atk: 65, def: 95, spa: 95, spd: 95, spe: 85 },
 	},
 	kingdra: {
 		inherit: true,
+		types: ['Dragon', 'Poison'],
 		isNonstandard: null,
 		baseStats: { hp: 75, atk: 95, def: 95, spa: 95, spd: 95, spe: 85 },
 		gen: 1,
 	},
 	goldeen: {
 		inherit: true,
+		types: ['Water', 'Normal'],
 		baseStats: { hp: 45, atk: 67, def: 60, spa: 50, spd: 50, spe: 63 },
 	},
 	seaking: {
 		inherit: true,
+		types: ['Water', 'Normal'],
 		baseStats: { hp: 80, atk: 92, def: 65, spa: 80, spd: 80, spe: 68 },
 	},
 	staryu: {
 		inherit: true,
+		types: ['Water', 'Fairy'],
 		baseStats: { hp: 30, atk: 45, def: 55, spa: 70, spd: 70, spe: 85 },
 	},
 	starmie: {
 		inherit: true,
+		types: ['Water', 'Fairy'],
 		baseStats: { hp: 60, atk: 75, def: 85, spa: 100, spd: 100, spe: 115 },
 	},
 	starmiemega: {
 		inherit: true,
 		isNonstandard: null,
+		types: ['Water', 'Fairy'],
 		baseStats: { hp: 60, atk: 140, def: 105, spa: 130, spd: 130, spe: 120 },
 		gen: 1,
 	},
@@ -748,32 +831,38 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	elekid: {
 		inherit: true,
+		types: ['Electric', 'Fighting'],
 		isNonstandard: null,
 		baseStats: { hp: 45, atk: 63, def: 37, spa: 55, spd: 55, spe: 95 },
 		gen: 1,
 	},
 	electabuzz: {
 		inherit: true,
+		types: ['Electric', 'Fighting'],
 		baseStats: { hp: 65, atk: 83, def: 57, spa: 85, spd: 85, spe: 105 },
 	},
 	electivire: {
 		inherit: true,
+		types: ['Electric', 'Fighting'],
 		isNonstandard: null,
 		baseStats: { hp: 75, atk: 123, def: 67, spa: 90, spd: 90, spe: 95 },
 		gen: 1,
 	},
 	magby: {
 		inherit: true,
+		types: ['Fire', 'Dark'],
 		isNonstandard: null,
 		baseStats: { hp: 45, atk: 75, def: 37, spa: 55, spd: 55, spe: 83 },
 		gen: 1,
 	},
 	magmar: {
 		inherit: true,
+		types: ['Fire', 'Dark'],
 		baseStats: { hp: 65, atk: 95, def: 57, spa: 85, spd: 85, spe: 93 },
 	},
 	magmortar: {
 		inherit: true,
+		types: ['Fire', 'Dark'],
 		isNonstandard: null,
 		baseStats: { hp: 75, atk: 95, def: 67, spa: 125, spd: 125, spe: 83 },
 		gen: 1,
@@ -790,6 +879,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	tauros: {
 		inherit: true,
+		types: ['Normal', 'Ground'],
 		baseStats: { hp: 75, atk: 100, def: 95, spa: 70, spd: 70, spe: 110 },
 	},
 	magikarp: {
@@ -798,6 +888,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	gyarados: {
 		inherit: true,
+		types: ['Dragon', 'Dark'],
 		baseStats: { hp: 95, atk: 125, def: 79, spa: 100, spd: 100, spe: 81 },
 	},
 	gyaradosmega: {
@@ -862,17 +953,20 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	porygon: {
 		inherit: true,
+		types: ['Electric', 'Ghost'],
 		baseStats: { hp: 65, atk: 60, def: 70, spa: 75, spd: 75, spe: 40 },
 	},
 	porygon2: {
 		inherit: true,
 		isNonstandard: null,
+		types: ['Electric', 'Ghost'],
 		baseStats: { hp: 85, atk: 80, def: 90, spa: 105, spd: 105, spe: 60 },
 		gen: 1,
 	},
 	porygonz: {
 		inherit: true,
 		isNonstandard: null,
+		types: ['Electric', 'Ghost'],
 		baseStats: { hp: 85, atk: 80, def: 70, spa: 135, spd: 135, spe: 90 },
 		gen: 1,
 	},
@@ -886,19 +980,23 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	kabuto: {
 		inherit: true,
+		types: ['Rock', 'Bug'],
 		baseStats: { hp: 30, atk: 80, def: 90, spa: 45, spd: 45, spe: 55 },
 	},
 	kabutops: {
 		inherit: true,
+		types: ['Rock', 'Bug'],
 		baseStats: { hp: 60, atk: 115, def: 105, spa: 70, spd: 70, spe: 80 },
 	},
 	aerodactyl: {
 		inherit: true,
+		types: ['Rock', 'Dragon'],
 		baseStats: { hp: 80, atk: 105, def: 65, spa: 60, spd: 60, spe: 130 },
 	},
 	aerodactylmega: {
 		inherit: true,
 		isNonstandard: null,
+		types: ['Rock', 'Dragon'],
 		baseStats: { hp: 80, atk: 135, def: 85, spa: 70, spd: 70, spe: 150 },
 		gen: 1,
 	},
@@ -926,18 +1024,22 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	dratini: {
 		inherit: true,
+		types: ['Dragon', 'Fairy'],
 		baseStats: { hp: 41, atk: 64, def: 45, spa: 50, spd: 50, spe: 50 },
 	},
 	dragonair: {
 		inherit: true,
+		types: ['Dragon', 'Fairy'],
 		baseStats: { hp: 61, atk: 84, def: 65, spa: 70, spd: 70, spe: 70 },
 	},
 	dragonite: {
 		inherit: true,
+		types: ['Dragon', 'Fairy'],
 		baseStats: { hp: 91, atk: 134, def: 95, spa: 100, spd: 100, spe: 80 },
 	},
 	dragonitemega: {
 		inherit: true,
+		types: ['Dragon', 'Fairy'],
 		isNonstandard: null,
 		baseStats: { hp: 91, atk: 124, def: 115, spa: 145, spd: 145, spe: 100 },
 		gen: 1,
