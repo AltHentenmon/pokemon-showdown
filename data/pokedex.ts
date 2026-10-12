@@ -15438,8 +15438,6 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 230,
 		color: "Yellow",
 		eggGroups: ["Undiscovered"],
-		requiredItem: "Ultranecrozium Z",
-		battleOnly: ["Necrozma-Dawn-Wings", "Necrozma-Dusk-Mane"],
 	},
 	magearna: {
 		num: 801,
