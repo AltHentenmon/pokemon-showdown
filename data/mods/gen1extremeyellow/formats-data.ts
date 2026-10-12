@@ -3378,7 +3378,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	},
 	greninjabond: {
 		tier: "Illegal",
-	}
+	},
 	bunnelby: {
 		isNonstandard: "Past",
 		tier: "Illegal",
