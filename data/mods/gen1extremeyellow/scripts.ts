@@ -141,6 +141,7 @@ export const Scripts: ModdedBattleScriptsData = {
 			}
 		}
 	}
+}
 
 		// ============================
 		// MOVE FIXES
