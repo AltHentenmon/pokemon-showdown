@@ -1329,6 +1329,9 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	dudunsparce: {
 		tier: "Illegal",
 	},
+	dudunsparcethreesegment: {
+		tier: "Illegal",
+	},
 	gligar: {
 		tier: "Illegal",
 	},
@@ -2541,6 +2544,57 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	arceus: {
 		tier: "Uber",
 	},
+	arceusbug: {
+		tier: "Illegal",
+	},
+	arceusdark: {
+		tier: "Illegal",
+	},
+	arceusdragon: {
+		tier: "Illegal",
+	},
+	arceuselectric: {
+		tier: "Illegal",
+	},
+	arceusfairy: {
+		tier: "Illegal",
+	},
+	arceusfighting: {
+		tier: "Illegal",
+	},
+	arceusfire: {
+		tier: "Illegal",
+	},
+	arceusflying: {
+		tier: "Illegal",
+	},
+	arceusghost: {
+		tier: "Illegal",
+	},
+	arceusgrass: {
+		tier: "Illegal",
+	},
+	arceusground: {
+		tier: "Illegal",
+	},
+	arceusice: {
+		tier: "Illegal",
+	},
+	arceuspoison: {
+		tier: "Illegal",
+	},
+	arceuspsychic: {
+		tier: "Illegal",
+	},
+	arceusrock: {
+		tier: "Illegal",
+	},
+	arceussteel: {
+		tier: "Illegal",
+	},
+	arceuswater: {
+		tier: "Illegal",
+	},
 	victini: {
 		isNonstandard: "Past",
 		tier: "Illegal",
@@ -2799,6 +2853,9 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "Illegal",
 	},
 	basculin: {
+		tier: "Illegal",
+	},
+	basculinbluestriped: {
 		tier: "Illegal",
 	},
 	basculegion: {
@@ -3245,6 +3302,9 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	keldeo: {
 		tier: "Illegal",
 	},
+	keldeoresolute: {
+		tier: "Illegal",
+	},
 	meloetta: {
 		tier: "Illegal",
 	},
@@ -3316,6 +3376,9 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Future",
 		tier: "Illegal",
 	},
+	greninjabond: {
+		tier: "Illegal",
+	}
 	bunnelby: {
 		isNonstandard: "Past",
 		tier: "Illegal",
@@ -3342,6 +3405,12 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "Illegal",
 	},
 	vivillon: {
+		tier: "Illegal",
+	},
+	vivillonfancy: {
+		tier: "Illegal",
+	},
+	vivillonpokeball: {
 		tier: "Illegal",
 	},
 	litleo: {
@@ -3396,6 +3465,9 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "Illegal",
 	},
 	meowstic: {
+		tier: "Illegal",
+	},
+	meowsticf: {
 		tier: "Illegal",
 	},
 	meowsticmmega: {
@@ -3558,12 +3630,15 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	},
 	pumpkaboosmall: {
 		isNonstandard: "Past",
+		tier: "Illegal",
 	},
 	pumpkaboolarge: {
 		isNonstandard: "Past",
+		tier: "Illegal",
 	},
 	pumpkaboosuper: {
 		isNonstandard: "Past",
+		tier: "Illegal",
 	},
 	gourgeist: {
 		isNonstandard: "Past",
@@ -3572,12 +3647,15 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	},
 	gourgeistsmall: {
 		isNonstandard: "Past",
+		tier: "Illegal",
 	},
 	gourgeistlarge: {
 		isNonstandard: "Past",
+		tier: "Illegal",
 	},
 	gourgeistsuper: {
 		isNonstandard: "Past",
+		tier: "Illegal",
 	},
 	bergmite: {
 		tier: "Illegal",
@@ -4343,6 +4421,9 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	toxtricity: {
 		tier: "Illegal",
 	},
+	toxtricitylowkey: {
+		tier: "Illegal",
+	},
 	toxtricitygmax: {
 		isNonstandard: "Past",
 		tier: "Illegal",
@@ -4378,7 +4459,13 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	sinistea: {
 		tier: "Illegal",
 	},
+	sinisteaantique: {
+		tier: "Illegal",
+	},
 	polteageist: {
+		tier: "Illegal",
+	},
+	polteageistantique: {
 		tier: "Illegal",
 	},
 	hatenna: {
@@ -4510,7 +4597,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "Illegal",
 	},
 	eternatuseternamax: {
-		tier: "Uber",
+		tier: "AG",
 	},
 	kubfu: {
 		tier: "Illegal",
@@ -4530,6 +4617,9 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "Illegal",
 	},
 	zarude: {
+		tier: "Illegal",
+	},
+	zarudedada: {
 		tier: "Illegal",
 	},
 	regieleki: {
@@ -4643,6 +4733,9 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	palafin: {
 		tier: "Illegal",
 	},
+	palafinhero: {
+		tier: "Illegal",
+	},
 	smoliv: {
 		tier: "Illegal",
 	},
@@ -4683,6 +4776,9 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	maushold: {
 		tier: "Illegal",
 	},
+	mausholdfour: {
+		tier: "Illegal",
+	},
 	cetoddle: {
 		tier: "Illegal",
 	},
@@ -4703,6 +4799,12 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "Illegal",
 	},
 	tatsugiri: {
+		tier: "Illegal",
+	},
+	tatsugiridroopy: {
+		tier: "Illegal",
+	},
+	tatsugiristretchy: {
 		tier: "Illegal",
 	},
 	tatsugiricurlymega: {
@@ -4739,6 +4841,15 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "Illegal",
 	},
 	squawkabilly: {
+		tier: "Illegal",
+	},
+	squawkabillyblue: {
+		tier: "Illegal",
+	},
+	squawkabillywhite: {
+		tier: "Illegal",
+	},
+	squawkabillyyellow: {
 		tier: "Illegal",
 	},
 	flamigo: {
@@ -4909,7 +5020,13 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	poltchageist: {
 		tier: "Illegal",
 	},
+	poltchageistartisan: {
+		tier: "Illegal",
+	},
 	sinistcha: {
+		tier: "Illegal",
+	},
+	sinistchamasterpiece: {
 		tier: "Illegal",
 	},
 	okidogi: {
@@ -4952,6 +5069,9 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "Illegal",
 	},
 	terapagos: {
+		tier: "Illegal",
+	},
+	terapagosterastal: {
 		tier: "Illegal",
 	},
 	terapagosstellar: {
@@ -5372,4 +5492,13 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "Unobtainable",
 		tier: "Illegal",
 	},
+	flox: {
+		tier: "Illegal",
+	},
+	obliteryx: {
+		tier: "Illegal",
+	},
+	scraptor: {
+		tier: "Illegal",
+	}
 };
