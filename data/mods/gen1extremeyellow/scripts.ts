@@ -1,5 +1,5 @@
 export const Scripts: ModdedBattleScriptsData = {
-	inherit: 'gen7',
+	inherit: 'gen1',
 	gen: 1,
 	
 	
@@ -116,34 +116,31 @@ export const Scripts: ModdedBattleScriptsData = {
 			// MEGA FIXES
 			// ============================
 			if (
-				species.isMega ||
-				species.forme?.includes('Mega')
+			    species.isMega ||
+			    species.forme?.includes('Mega')
 			) {
-				// Keep Mega identity
-				// species.isMega = true;
-
-				// Prevent transformation behavior
-				species.battleOnly = undefined;
-				species.baseSpecies = species.name;
-				
-				delete species.requiredItem;
-    			delete species.requiredMove;
-
-				// Copy learnset from base species if needed
-				if (species.baseSpecies) {
-					const baseId = this.toID(species.baseSpecies);
-
-					const baseLearnset =
-						this.data.Learnsets[baseId]?.learnset;
-
-					if (baseLearnset && !this.data.Learnsets[id]) {
-						this.modData('Learnsets', id, {
-							learnset: {...baseLearnset},
-						});
-					}
-				}
+			    // Prevent transformation behavior
+			    species.battleOnly = undefined;
+			
+			    // DO NOT DO THIS: species.baseSpecies = species.name;
+			    // Instead, delete baseSpecies so it stands alone, or leave the original parent name intact.
+			    delete species.baseSpecies; 
+			
+			    delete species.requiredItem;
+			    delete species.requiredMove;
+			
+			    // Copy learnset from base species manually if needed
+			    const baseId = this.toID(species.name.replace(/[- ]Mega.*/, ''));
+			    const baseLearnset = this.data.Learnsets[baseId]?.learnset;
+			
+			    if (baseLearnset && !this.data.Learnsets[id]) {
+			        this.modData('Learnsets', id, {
+			            learnset: {...baseLearnset},
+			        });
+			    }
 			}
 		}
+	}
 
 		// ============================
 		// MOVE FIXES
