@@ -18,8 +18,8 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		baseStats: { hp: 80, atk: 82, def: 83, spa: 100, spd: 100, spe: 80 },
 	},
     venusaurmega: {
-		name: "Venusaur-Mega",
 		baseSpecies: "Venusaur",
+		name: "Venusaur-Mega",
 		types: ['Grass', 'Ground'],
 		isNonstandard: null,
 		baseStats: { hp: 80, atk: 100, def: 123, spa: 122, spd: 122, spe: 80 },
