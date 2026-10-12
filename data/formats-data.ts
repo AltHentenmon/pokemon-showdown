@@ -1048,7 +1048,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		natDexTier: "RU",
 	},
 	aerodactylmega: {
-		tier: "OU",
+		tier: "Uber",
 		natDexTier: "UU",
 	},
 	munchlax: {
