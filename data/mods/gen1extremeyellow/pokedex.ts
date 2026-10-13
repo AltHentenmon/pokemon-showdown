@@ -18,6 +18,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		baseStats: { hp: 80, atk: 82, def: 83, spa: 100, spd: 100, spe: 80 },
 	},
     venusaurmega: {
+		inherit: true,
 		baseSpecies: "Venusaur",
 		name: "Venusaur-Mega",
 		types: ['Grass', 'Ground'],
@@ -35,12 +36,12 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	charizard: {
 		inherit: true,
-		
 		types: ['Fire', 'Dragon'],
 		evos: ["charizardmegax", "charizardmegay"],
 		baseStats: { hp: 78, atk: 84, def: 78, spa: 85, spd: 85, spe: 100 },
 	},
     charizardmegax: {
+		inherit: true,
 		baseSpecies: "Charizard",
 		name: "Charizard-Mega-X",
 		types: ['Fire', 'Dragon'],
@@ -49,6 +50,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		gen: 1,
 	},
     charizardmegay: {
+		inherit: true,
 		baseSpecies: "Charizard",
 		name: "Charizard-Mega-Y",
 		types: ['Fire', 'Dragon'],
@@ -71,6 +73,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		baseStats: { hp: 79, atk: 83, def: 100, spa: 85, spd: 85, spe: 78 },
 	},
     blastoisemega: {
+		inherit: true,
 		baseSpecies: "Blastoise",
 		name: "Blastoise-Mega",
 		types: ['Water', 'Steel'],
@@ -129,6 +132,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		baseStats: { hp: 83, atk: 80, def: 75, spa: 70, spd: 70, spe: 91 },
 	},
     pidgeotmega: {
+		inherit: true,
 		baseSpecies: "Pidgeot",
 		name: "Pidgeot-Mega",
 		types: ['Flying'],
@@ -184,6 +188,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		baseStats: { hp: 60, atk: 90, def: 55, spa: 90, spd: 90, spe: 100 },
 	},
     raichumegax: {
+		inherit: true,
 		baseSpecies: "Raichu",
 		name: "Raichu-Mega-X",
 		types: ['Electric', 'Flying'],
@@ -192,6 +197,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		gen: 1,
 	},
     raichumegay: {
+		inherit: true,
 		baseSpecies: "Raichu",
 		name: "Raichu-Mega-Y",
 		types: ['Electric', 'Fairy'],
@@ -249,6 +255,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		baseStats: { hp: 95, atk: 70, def: 73, spa: 85, spd: 85, spe: 60 },
 	},
     clefablemega: {
+		inherit: true,
 		baseSpecies: "Clefable",
 		name: "Clefable-Mega",
 		types: ['Fairy', 'Flying'],
@@ -447,6 +454,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		baseStats: { hp: 80, atk: 105, def: 65, spa: 100, spd: 100, spe: 70 },
 	},
     victreebelmega: {
+		inherit: true,
 		baseSpecies: "Victreebel",
 		name: "Victreebel-Mega",
 		types: ['Grass', 'Poison'],
@@ -493,7 +501,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	slowbro: {
 		inherit: true,
-		evos: ["megaslowbro"],
+		evos: ["slowbromega"],
 		baseStats: { hp: 95, atk: 75, def: 110, spa: 80, spd: 80, spe: 30 },
 	},
     slowbromega: {
@@ -583,6 +591,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		baseStats: { hp: 60, atk: 65, def: 60, spa: 130, spd: 130, spe: 110 },
 	},
     gengarmega: {
+		inherit: true,
 		baseSpecies: "Gengar",
 		name: "Gengar-Mega",
 		types: ['Ghost', 'Dark'],
@@ -602,6 +611,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		gen: 1,
 	},
     steelixmega: {
+		inherit: true,
 		baseSpecies: "Steelix",
 		name: "Steelix-Mega",
 		types: ['Steel', 'Ground'],
@@ -753,6 +763,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		baseStats: { hp: 105, atk: 95, def: 80, spa: 40, spd: 40, spe: 90 },
 	},
 	kangaskhanmega: {
+		inherit: true,
 		baseSpecies: "Kangaskhan",
 		name: "Kangaskhan-Mega",
 		types: ['Normal'],
