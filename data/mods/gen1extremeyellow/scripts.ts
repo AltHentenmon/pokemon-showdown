@@ -1,7 +1,7 @@
 export const Scripts: ModdedBattleScriptsData = {
     inherit: 'gen1',
     gen: 1,
-    
+
     getCategory(move) {
         return move.category;
     },
@@ -16,12 +16,17 @@ export const Scripts: ModdedBattleScriptsData = {
         const isExtremeYellow = format.id === 'gen1extremeyellow';
 
         // ============================
+        // SPECIES EXISTENCE
+        // ============================
+        if (!species.exists) {
+            return [`The Pokémon "${set.species}" does not exist.`];
+        }
+
+        // ============================
         // SPECIES LEGALITY
         // ============================
-        if (!isExtremeYellow) {
-            if (species.gen > 1 && !species.isNonstandard) {
-                errors.push(`${species.name} is not available in this format.`);
-            }
+        if (!isExtremeYellow && species.gen > 1) {
+            errors.push(`${species.name} is not available in this format.`);
         }
 
         // ============================
@@ -30,21 +35,23 @@ export const Scripts: ModdedBattleScriptsData = {
         const learnset =
             this.dex.species.getLearnsetData(species.id)?.learnset || {};
 
+        let baseLearnset: { [moveid: string]: any } = {};
+
+        if (species.baseSpecies && species.baseSpecies !== species.name) {
+            const baseId = this.toID(species.baseSpecies);
+            baseLearnset =
+                this.dex.species.getLearnsetData(baseId)?.learnset || {};
+        }
+
         for (const moveName of set.moves) {
             const move = this.dex.moves.get(moveName);
 
-            // Direct learnset
-            if (learnset[move.id]) continue;
-
-            // Mega fallback to base species learnset
-            if (species.baseSpecies) {
-                const baseId = this.toID(species.baseSpecies);
-
-                const baseLearnset =
-                    this.dex.species.getLearnsetData(baseId)?.learnset || {};
-
-                if (baseLearnset[move.id]) continue;
+            if (!move.exists) {
+                errors.push(`${species.name} cannot learn ${moveName}.`);
+                continue;
             }
+
+            if (learnset[move.id] || baseLearnset[move.id]) continue;
 
             errors.push(`${species.name} cannot learn ${move.name}.`);
         }
@@ -53,19 +60,20 @@ export const Scripts: ModdedBattleScriptsData = {
     },
 
     // ============================
-    // TEAM VALIDATION (MEGA CLAUSE)
+    // TEAM VALIDATION: MEGA CLAUSE
     // ============================
     onValidateTeam(team, format) {
         const isExtremeYellow = format.id === 'gen1extremeyellow';
-
         let megaCount = 0;
 
         for (const set of team) {
             const species = this.dex.species.get(set.species);
 
+            if (!species.exists) continue;
+
             const isMega =
                 !!species.isMega ||
-                species.forme?.includes('Mega') ||
+                !!species.forme?.includes('Mega') ||
                 species.name.includes('Mega');
 
             if (isMega) megaCount++;
@@ -88,52 +96,48 @@ export const Scripts: ModdedBattleScriptsData = {
     // SWITCH IN
     // ============================
     onSwitchIn(pokemon) {
-        // Reserved for future mechanics
+        // Reserved for future mechanics.
     },
 
     // ============================
     // INIT PATCHES
     // ============================
     init() {
-
         // ============================
-        // POKÉDEX FIXES
+        // POKEDEX FIXES
         // ============================
         for (const id in this.data.Pokedex) {
             const species = this.modData('Pokedex', id);
 
-            // Make everything standard
+            // Make everything standard in this custom format.
             species.isNonstandard = null;
-
             species.gen = 1;
 
-            // Default tier fallback
             if (!species.tier) species.tier = 'OU';
 
             // ============================
             // MEGA FIXES
             // ============================
-            if (
-                species.isMega ||
-                species.forme?.includes('Mega')
-            ) {
-                // Prevent transformation behavior
+            if (species.isMega || species.forme?.includes('Mega')) {
+                // Treat the Mega as a separate species.
+                // Do not delete baseSpecies: it is useful for learnsets.
                 species.battleOnly = undefined;
-            
-                // Removed the buggy assignment; delete baseSpecies so it stands alone safely
-                delete species.baseSpecies; 
-            
-                delete species.requiredItem;
-                delete species.requiredMove;
-            
-                // Copy learnset from base species manually if needed
-                const baseId = this.toID(species.name.replace(/[- ]Mega.*/, ''));
-                const baseLearnset = this.data.Learnsets[baseId]?.learnset;
-            
-                if (baseLearnset && !this.data.Learnsets[id]) {
-                    this.modData('Learnsets', id, {
-                        learnset: {...baseLearnset},
-                    });
+                species.requiredItem = undefined;
+                species.requiredMove = undefined;
+
+                // Ensure Mega learnsets exist independently.
+                const baseSpeciesName = species.baseSpecies;
+
+                if (baseSpeciesName) {
+                    const baseId = this.toID(baseSpeciesName);
+                    const baseLearnset =
+                        this.data.Learnsets[baseId]?.learnset;
+
+                    if (baseLearnset && !this.data.Learnsets[id]) {
+                        this.modData('Learnsets', id, {
+                            learnset: { ...baseLearnset },
+                        });
+                    }
                 }
             }
         }
@@ -145,19 +149,7 @@ export const Scripts: ModdedBattleScriptsData = {
             const move = this.modData('Moves', id);
 
             move.isNonstandard = null;
-
-            // Make all modern moves legal in ER
             move.gen = 1;
-        }
-
-        for (const id in this.data.Moves) {
-            if (!this.data.Moves[id]) continue;
-
-            const move = this.data.Moves[id];
-
-            if (move.category === 'Status') continue;
-
-            this.modData('Moves', id).category = move.category;
         }
 
         // ============================
