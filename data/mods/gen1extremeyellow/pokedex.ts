@@ -249,16 +249,19 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
     cleffa: {
 		inherit: true,
+		types: ['Fairy'],
 		isNonstandard: null,
 		baseStats: { hp: 50, atk: 25, def: 28, spa: 45, spd: 45, spe: 15 },
 		gen: 1,
 	},
 	clefairy: {
 		inherit: true,
+		types: ['Fairy'],
 		baseStats: { hp: 70, atk: 45, def: 48, spa: 60, spd: 60, spe: 35 },
 	},
 	clefable: {
 		inherit: true,
+		types: ['Fairy'],
 		evos: ["clefablemega"],
 		baseStats: { hp: 95, atk: 70, def: 73, spa: 85, spd: 85, spe: 60 },
 	},
@@ -284,15 +287,18 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
     igglybuff: {
 		inherit: true,
+		types: ['Normal', 'Fairy'],
 		baseStats: { hp: 90, atk: 30, def: 15, spa: 20, spd: 20, spe: 15 },
 		gen: 1,
 	},
 	jigglypuff: {
 		inherit: true,
+		types: ['Normal', 'Fairy'],
 		baseStats: { hp: 115, atk: 45, def: 20, spa: 25, spd: 25, spe: 20 },
 	},
 	wigglytuff: {
 		inherit: true,
+		types: ['Normal', 'Fairy'],
 		baseStats: { hp: 140, atk: 70, def: 45, spa: 68, spd: 68, spe: 45 },
 	},
 	zubat: {
@@ -532,10 +538,12 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	magnemite: {
 		inherit: true,
+		types: ['Electric', 'Steel'],
 		baseStats: { hp: 25, atk: 35, def: 70, spa: 95, spd: 95, spe: 45 },
 	},
 	magneton: {
 		inherit: true,
+		types: ['Electric', 'Steel'],
 		baseStats: { hp: 50, atk: 60, def: 95, spa: 120, spd: 120, spe: 70 },
 	},
     magnezone: {
@@ -833,12 +841,14 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	mimejr: {
 		inherit: true,
+		types: ['Psychic', 'Fairy'],
 		isNonstandard: null,
 		baseStats: { hp: 20, atk: 25, def: 45, spa: 70, spd: 70, spe: 60 },
 		gen: 1,
 	},
 	mrmime: {
 		inherit: true,
+		types: ['Psychic', 'Fairy'],
 		baseStats: { hp: 40, atk: 45, def: 65, spa: 100, spd: 100, spe: 90 },
 	},
 	scyther: {
