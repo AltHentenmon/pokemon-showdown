@@ -134,6 +134,10 @@ export const Scripts: ModdedBattleScriptsData = {
                     const formeName = species.name.replace(species.baseSpecies, '').toLowerCase().replace(/[^a-z0-9]/g, '');
                     const shorthandId = `${baseId}${formeName}`;
                     
+                    if (!this.data.Aliases) {
+                        // @ts-ignore
+                        this.data.Aliases = {};
+                    }
                     if (!this.data.Aliases[shorthandId]) {
                         this.data.Aliases[shorthandId] = id;
                     }
