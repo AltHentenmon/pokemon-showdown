@@ -10,6 +10,10 @@ export const Scripts: ModdedBattleScriptsData = {
     // TEAM VALIDATION
     // ============================
     onValidateSet(set, format) {
+        if (!set.species) {
+            return [`The Pokémon field cannot be empty.`];
+        }
+
         const species = this.dex.species.get(set.species);
         const errors: string[] = [];
 
@@ -67,6 +71,7 @@ export const Scripts: ModdedBattleScriptsData = {
         let megaCount = 0;
 
         for (const set of team) {
+            if (!set.species) continue;
             const species = this.dex.species.get(set.species);
 
             if (!species.exists) continue;
@@ -104,32 +109,39 @@ export const Scripts: ModdedBattleScriptsData = {
     // ============================
     init() {
         // ============================
-        // POKEDEX FIXES
+        // POKEDEX & ALIAS FIXES
         // ============================
         for (const id in this.data.Pokedex) {
             const species = this.modData('Pokedex', id);
+            if (!species) continue;
 
-            // Make everything standard in this custom format.
             species.isNonstandard = null;
             species.gen = 1;
 
             if (!species.tier) species.tier = 'OU';
 
             // ============================
-            // MEGA FIXES
+            // MEGA FIXES & AUTO-ALIASING
             // ============================
-            if (species.isMega || species.forme?.includes('Mega')) {
-                // Treat the Mega as a separate species.
-                // Do not delete baseSpecies: it is useful for learnsets.
+            if (species.isMega || species.forme?.includes('Mega') || species.name.includes('Mega')) {
                 species.battleOnly = undefined;
                 species.requiredItem = undefined;
                 species.requiredMove = undefined;
 
+                // Automatically generate aliases so variations like "Charizard X" or "Victreebel-Mega" resolve properly
+                const baseId = this.toID(species.baseSpecies);
+                if (baseId) {
+                    const formeName = species.name.replace(species.baseSpecies, '').toLowerCase().replace(/[^a-z0-9]/g, '');
+                    const shorthandId = `${baseId}${formeName}`;
+                    
+                    if (!this.data.Aliases[shorthandId]) {
+                        this.data.Aliases[shorthandId] = id;
+                    }
+                }
+
                 // Ensure Mega learnsets exist independently.
                 const baseSpeciesName = species.baseSpecies;
-
                 if (baseSpeciesName) {
-                    const baseId = this.toID(baseSpeciesName);
                     const baseLearnset =
                         this.data.Learnsets[baseId]?.learnset;
 
@@ -147,6 +159,7 @@ export const Scripts: ModdedBattleScriptsData = {
         // ============================
         for (const id in this.data.Moves) {
             const move = this.modData('Moves', id);
+            if (!move) continue;
 
             move.isNonstandard = null;
             move.gen = 1;
@@ -157,6 +170,7 @@ export const Scripts: ModdedBattleScriptsData = {
         // ============================
         for (const id in this.data.Items) {
             const item = this.modData('Items', id);
+            if (!item) continue;
 
             item.isNonstandard = null;
             item.gen = 1;
