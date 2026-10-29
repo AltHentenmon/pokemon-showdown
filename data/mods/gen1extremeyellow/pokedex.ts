@@ -103,6 +103,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
     beedrillmega: {
 		name: "Beedrill-Mega",
 		baseSpecies: "Beedrill",
+		types: ['Bug', 'Poison'],
 		isNonstandard: null,
 		baseStats: { hp: 65, atk: 150, def: 40, spa: 48, spd: 48, spe: 145 },
 	},
@@ -412,6 +413,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
     alakazammega: {
 		name: "Alakazam-Mega",
 		baseSpecies: "Alakazam",
+		types: ['Psychic'],
 		isNonstandard: null,
 		baseStats: { hp: 55, atk: 50, def: 65, spa: 175, spd: 175, spe: 150 },
 	},
@@ -491,6 +493,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
     slowbromega: {
 		name: "Slowbro-Mega",
+		types: ['Water', 'Psychic'],
 		baseSpecies: "Slowbro",
 		isNonstandard: null,
 		baseStats: { hp: 95, atk: 75, def: 180, spa: 105, spd: 105, spe: 30 },
@@ -816,6 +819,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	scizormega: {
 		name: "Scizor-Mega",
+		types: ['Bug', 'Steel'],
 		baseSpecies: "Scizor",
 		isNonstandard: null,
 		baseStats: { hp: 70, atk: 150, def: 140, spa: 83, spd: 83, spe: 75 },
@@ -882,6 +886,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	pinsirmega: {
 		name: "Pinsir-Mega",
 		baseSpecies: "Pinsir",
+		types: ['Bug', 'Flying'],
 		isNonstandard: null,
 		baseStats: { hp: 65, atk: 155, def: 120, spa: 78, spd: 78, spe: 105 },
 	},
@@ -903,6 +908,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	gyaradosmega: {
 		name: "Gyarados-Mega",
 		baseSpecies: "Gyarados",
+		types: ['Water', 'Dark'],
 		isNonstandard: null,
 		baseStats: { hp: 95, atk: 155, def: 109, spa: 130, spd: 130, spe: 81 },
 	},
@@ -1067,11 +1073,13 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	mewtwomegax: {
 		name: "Mewtwo-Mega-X",
+		types: ['Psychic', 'Fighting'],
 		isNonstandard: null,
 		baseStats: { hp: 106, atk: 190, def: 100, spa: 154, spd: 154, spe: 130 },
 	},
 	mewtwomegay: {
 		name: "Mewtwo-Mega-Y",
+		types: ['Psychic'],
 		isNonstandard: null,
 		baseStats: { hp: 106, atk: 150, def: 70, spa: 194, spd: 194, spe: 140 },
 	},
@@ -1113,6 +1121,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	zygardemega: {
 		name: "Zygarde-Mega",
+		types: ['Dragon', 'Ground'],
 		isNonstandard: null,
 		baseStats: { hp: 216, atk: 70, def: 91, spa: 216, spd: 216, spe: 100 },
 	},
