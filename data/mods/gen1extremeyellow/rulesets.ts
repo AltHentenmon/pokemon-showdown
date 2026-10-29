@@ -36,6 +36,17 @@ export const Rulesets: import('../../../sim/dex-formats').ModdedFormatDataTable 
         }
     },
 },
+	ultranecrozmalegal: {
+	effectType: 'Rule',
+	name: 'Legal UN',
+	desc: 'Ultra Necrozma can exist by itself.',
+	onValidateSet(set) {
+        // Allow Ultra Necrozma directly regardless of items or base forms
+        if (this.toID(set.species) === 'necrozmaultra') {
+            return; // Passes validation directly
+        }
+    },
+},
 	'350cupmod': {
 		effectType: 'Rule',
 		name: '350 Cup Mod',

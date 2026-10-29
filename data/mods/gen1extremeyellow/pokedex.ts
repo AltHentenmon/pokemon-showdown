@@ -18,8 +18,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		baseStats: { hp: 80, atk: 82, def: 83, spa: 100, spd: 100, spe: 80 },
 	},
     venusaurmega: {
-		inherit: true,
-		isMega: true,
+		forme: "Mega",
 		baseSpecies: "Venusaur",
 		name: "Venusaur-Mega",
 		types: ['Grass', 'Ground'],
@@ -42,8 +41,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		baseStats: { hp: 78, atk: 84, def: 78, spa: 85, spd: 85, spe: 100 },
 	},
     charizardmegax: {
-		inherit: true,
-		isMega: true,
+		forme: "Mega",
 		baseSpecies: "Charizard",
 		name: "Charizard-Mega-X",
 		types: ['Fire', 'Dragon'],
@@ -52,8 +50,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		gen: 1,
 	},
     charizardmegay: {
-		inherit: true,
-		isMega: true,
+		forme: "Mega",
 		baseSpecies: "Charizard",
 		name: "Charizard-Mega-Y",
 		types: ['Fire', 'Dragon'],
@@ -76,8 +73,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		baseStats: { hp: 79, atk: 83, def: 100, spa: 85, spd: 85, spe: 78 },
 	},
     blastoisemega: {
-		inherit: true,
-		isMega: true,
+		forme: "Mega",
 		baseSpecies: "Blastoise",
 		name: "Blastoise-Mega",
 		types: ['Water', 'Steel'],
@@ -112,8 +108,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		baseStats: { hp: 65, atk: 80, def: 40, spa: 45, spd: 45, spe: 75 },
 	},
     beedrillmega: {
-		inherit: true,
-		isMega: true,
+		forme: "Mega",
 		name: "Beedrill-Mega",
 		baseSpecies: "Beedrill",
 		isNonstandard: null,
@@ -137,8 +132,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		baseStats: { hp: 83, atk: 80, def: 75, spa: 70, spd: 70, spe: 91 },
 	},
     pidgeotmega: {
-		inherit: true,
-		isMega: true,
+		forme: "Mega",
 		baseSpecies: "Pidgeot",
 		name: "Pidgeot-Mega",
 		types: ['Flying'],
@@ -266,8 +260,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		baseStats: { hp: 95, atk: 70, def: 73, spa: 85, spd: 85, spe: 60 },
 	},
     clefablemega: {
-		inherit: true,
-		isMega: true,
+		forme: "Mega",
 		baseSpecies: "Clefable",
 		name: "Clefable-Mega",
 		types: ['Fairy', 'Flying'],
@@ -436,8 +429,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		baseStats: { hp: 55, atk: 50, def: 45, spa: 135, spd: 135, spe: 120 },
 	},
     alakazammega: {
-		inherit: true,
-		isMega: true,
+		forme: "Mega",
 		name: "Alakazam-Mega",
 		baseSpecies: "Alakazam",
 		isNonstandard: null,
@@ -470,8 +462,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		baseStats: { hp: 80, atk: 105, def: 65, spa: 100, spd: 100, spe: 70 },
 	},
     victreebelmega: {
-		inherit: true,
-		isMega: true,
+		forme: "Mega",
 		baseSpecies: "Victreebel",
 		name: "Victreebel-Mega",
 		types: ['Grass', 'Poison'],
@@ -522,8 +513,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		baseStats: { hp: 95, atk: 75, def: 110, spa: 80, spd: 80, spe: 30 },
 	},
     slowbromega: {
-		inherit: true,
-		isMega: true,
+		forme: "Mega",
 		name: "Slowbro-Mega",
 		baseSpecies: "Slowbro",
 		isNonstandard: null,
@@ -611,8 +601,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		baseStats: { hp: 60, atk: 65, def: 60, spa: 130, spd: 130, spe: 110 },
 	},
     gengarmega: {
-		inherit: true,
-		isMega: true,
+		forme: "Mega",
 		baseSpecies: "Gengar",
 		name: "Gengar-Mega",
 		types: ['Ghost', 'Dark'],
@@ -632,8 +621,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		gen: 1,
 	},
     steelixmega: {
-		inherit: true,
-		isMega: true,
+		forme: "Mega",
 		baseSpecies: "Steelix",
 		name: "Steelix-Mega",
 		types: ['Steel', 'Ground'],
@@ -785,8 +773,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		baseStats: { hp: 105, atk: 95, def: 80, spa: 40, spd: 40, spe: 90 },
 	},
 	kangaskhanmega: {
-		inherit: true,
-		isMega: true,
+		forme: "Mega",
 		baseSpecies: "Kangaskhan",
 		name: "Kangaskhan-Mega",
 		types: ['Normal'],
@@ -831,8 +818,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		baseStats: { hp: 60, atk: 75, def: 85, spa: 100, spd: 100, spe: 115 },
 	},
 	starmiemega: {
-		inherit: true,
-		isMega: true,
+		forme: "Mega",
 		isNonstandard: null,
 		name: "Starmie-Mega",
 		types: ['Water', 'Fairy'],
@@ -863,8 +849,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		gen: 1,
 	},
 	scizormega: {
-		inherit: true,
-		isMega: true,
+		forme: "Mega",
 		name: "Scizor-Mega",
 		baseSpecies: "Scizor",
 		isNonstandard: null,
@@ -931,8 +916,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		baseStats: { hp: 65, atk: 125, def: 100, spa: 55, spd: 55, spe: 85 },
 	},
 	pinsirmega: {
-		inherit: true,
-		isMega: true,
+		forme: "Mega",
 		name: "Pinsir-Mega",
 		baseSpecies: "Pinsir",
 		isNonstandard: null,
@@ -955,8 +939,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		baseStats: { hp: 95, atk: 125, def: 79, spa: 100, spd: 100, spe: 81 },
 	},
 	gyaradosmega: {
-		inherit: true,
-		isMega: true,
+		forme: "Mega",
 		name: "Gyarados-Mega",
 		baseSpecies: "Gyarados",
 		isNonstandard: null,
@@ -1060,8 +1043,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		baseStats: { hp: 80, atk: 105, def: 65, spa: 60, spd: 60, spe: 130 },
 	},
 	aerodactylmega: {
-		inherit: true,
-		isMega: true,
+		forme: "Mega",
 		name: "Aerodactyl-Mega",
 		isNonstandard: null,
 		types: ['Rock', 'Dragon'],
@@ -1106,8 +1088,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		baseStats: { hp: 91, atk: 134, def: 95, spa: 100, spd: 100, spe: 80 },
 	},
 	dragonitemega: {
-		inherit: true,
-		isMega: true,
+		forme: "Mega",
 		name: "Dragonite-Mega",
 		types: ['Dragon', 'Fairy'],
 		isNonstandard: null,
@@ -1129,16 +1110,14 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		baseStats: { hp: 106, atk: 110, def: 90, spa: 154, spd: 154, spe: 130 },
 	},
 	mewtwomegax: {
-		inherit: true,
-		isMega: true,
+		forme: "Mega",
 		name: "Mewtwo-Mega-X",
 		isNonstandard: null,
 		baseStats: { hp: 106, atk: 190, def: 100, spa: 154, spd: 154, spe: 130 },
 		gen: 1,
 	},
 	mewtwomegay: {
-		inherit: true,
-		isMega: true,
+		forme: "Mega",
 		name: "Mewtwo-Mega-Y",
 		isNonstandard: null,
 		baseStats: { hp: 106, atk: 150, def: 70, spa: 194, spd: 194, spe: 140 },
@@ -1181,8 +1160,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		baseStats: { hp: 105, atk: 116, def: 116, spa: 145, spd: 145, spe: 116 }, 
 	},
 	zygardemega: {
-		inherit: true,
-		isMega: true,
+		forme: "Mega",
 		name: "Zygarde-Mega",
 		isNonstandard: null,
 		baseStats: { hp: 216, atk: 70, def: 91, spa: 216, spd: 216, spe: 100 },
